@@ -1,0 +1,19 @@
+[{
+	"flight number": "12345",
+	"flight status": "cancelled",
+	"flight arrival time": null,
+	"flight departure time": null,
+	"flight delay time": null
+}, {
+	"flight number": "12321",
+	"flight status": "delayed",
+	"flight arrival time": "1200",
+	"flight departure time": "1450",
+	"flight delay time": "110"
+}, {
+	"flight number": "11221",
+	"flight status": "ontime",
+	"flight arrival time": "1100",
+	"flight departure time": "1200",
+	"flight delay time": null
+}]

@@ -1,0 +1,49 @@
+<% include partials/header %>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a style="font-family:courier;" class="navbar-brand" href="https://www.expedia.co.in/"><img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&test=b2p-yellow-header"></a>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+		<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+          	
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          
+            <h3><%= hotelRender%></h3>
+          </div>
+        </div>
+        <div class="row d-flex" style="padding-left: 100px;">
+          <% for(var i=0; i< sendData.length; i++) {%>
+            <div class="col-md-4 d-flex ft -->co-animate">
+              <div class="blog-entry align-self-stretch">
+                <a href="<%= sendData[i].website_url %>" class="block-20">
+                  <img src="<%= sendData[i].img_url%>" class="img-fluid" alt="Responsive image">
+                </a>
+                <div class="text mt-3 text-center">
+                	<div class="meta mb-2">
+                    <div><a href="#">Rs <%= sendData[i].price %></a></div>
+                  </div>
+                  <h3 class="heading"><a href="#"><%= sendData[i].name%></a></h3>
+                  <p><a href="<%= sendData[i].website_url %>" class="btn-custom">Read more</a></p>
+                </div>
+              </div>
+            </div>
+          <% } %>  
+
+      </div>
+    </section>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <% include partials/footer %>
